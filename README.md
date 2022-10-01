@@ -1,9 +1,13 @@
 # Reactive CounterIncrement in VanillaJS
 *This is why I'm still struggling to get my head around reactive frameworks like React.js*
 
-In ---, 2020, just after I'd learned how to build native `WebComponents` I came across...
+In Oct 2020, just after I'd learned how to build native `WebComponents` I came across
 
-Similarly, this morning, I've just come across this article:
+I built this [**Data Driven WebComponent**](https://github.com/RouninMedia/Data-Driven-WebComponent) to show that
+
+____
+
+In a similar exercise, this morning, I've just come across this article:
 
  - [Making `setInterval` Declarative with React Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/) by *Dan Abramov*
 

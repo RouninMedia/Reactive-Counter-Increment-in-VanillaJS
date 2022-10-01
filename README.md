@@ -85,7 +85,7 @@ It's around 10-11 lines long and is straightforwardly legible to a human reader 
 
 ______
 
-Initially I imagined it would require a lot more code in **VanillaJS** to reproduce an identical *dynamic `setInterval`*.
+Initially I imagined it would require a lot more code in **VanillaJS** to reproduce a near-identical *dynamic `setInterval`*.
 
 But it turns out the same can be achieved, *also* in 10 lines:
 

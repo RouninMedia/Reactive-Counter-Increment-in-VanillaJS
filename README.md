@@ -17,9 +17,9 @@ He responds:
 
 > This may not be obvious at first, but the difference between the setInterval you know and my useInterval Hook is that its arguments are “dynamic”.
 
-And then he demonstrates the *dynamic `setInterval`* with two examples:
+And then he demonstrates the *dynamic `setInterval`* with two examples.
 
-### The longer example using React classes
+### The longer example using React classes:
 
 ```js
 class Counter extends React.Component {
@@ -58,7 +58,7 @@ class Counter extends React.Component {
 }
 ```
 
-### The shorter example using React hooks
+### The shorter example using React hooks:
 
 ```js
 function Counter() {
@@ -79,9 +79,15 @@ function Counter() {
 }
 ```
 
+The second example using React hooks is shorter and arguably clearer and better.
+
+It's around 10-11 lines long and is straightforwardly legible to a human reader who understands the syntax.
+
 ______
 
+Initially I imagined it would require a lot more code in **VanillaJS** to reproduce an identical *dynamic `setInterval`*.
 
+But it turns out the same can be achieved, *also* in 10 lines:
 
 ## HTML
 
@@ -98,15 +104,15 @@ ______
 const counterHeading = document.querySelector('.counterHeading');
 let counterIntervalInput = document.querySelector('.intervalInput');
 
-const getCounterInterval = () => counterIntervalInput.value;
-const getCounterValue = () => parseInt(counterHeading.textContent);
-const incrementCounterValue = () => counterHeading.textContent = (getCounterValue() + 1);
+const getCounterInterval = () => {counterIntervalInput.value;}
+const getCounterValue = () => {parseInt(counterHeading.textContent);}
+const incrementCounterValue = () => {counterHeading.textContent = (getCounterValue() + 1);}
 
-let incrementCounter = setInterval(() => incrementCounterValue(), getCounterInterval());
+let incrementCounter = setInterval(() => {incrementCounterValue();}, getCounterInterval());
 
 const updateCounterInterval = () => {
   clearInterval(incrementCounter);
-  incrementCounter = setInterval(() => incrementCounterValue(), getCounterInterval());
+  incrementCounter = setInterval(() => {incrementCounterValue();}, getCounterInterval());
 }
 
 counterIntervalInput.addEventListener('change', updateCounterInterval);

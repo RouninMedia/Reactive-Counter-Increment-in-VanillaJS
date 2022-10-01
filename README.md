@@ -113,7 +113,7 @@ const incrementCounterValue = () => {counterHeading.textContent = (getCounterVal
 // DECLARE NAMED INTERVAL
 let incrementCounter = setInterval(() => {incrementCounterValue();}, getCounterInterval());
 
-// UPDATE NAMED INTERVAL FUNCTION
+// UPDATE NAMED INTERVAL
 const updateCounterInterval = () => {
   clearInterval(incrementCounter);
   incrementCounter = setInterval(() => {incrementCounterValue();}, getCounterInterval());

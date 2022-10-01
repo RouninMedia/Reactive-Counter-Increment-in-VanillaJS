@@ -1,6 +1,16 @@
 # Reactive CounterIncrement in VanillaJS
 *This is why I'm still struggling to get my head around reactive frameworks like React.js*
 
+In ---, 2020, just after I'd learned how to build native `WebComponents` I came across...
+
+Similarly, this morning, I've just come across this article:
+
+
+
+
+
+
+
 ## HTML
 
 ```html
@@ -28,3 +38,7 @@ const updateCounterInterval = () => {
 
 counterIntervalInput.addEventListener('change', updateCounterInterval);
 ```
+____
+
+## See also:
+

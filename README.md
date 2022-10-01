@@ -87,7 +87,7 @@ ______
 
 Initially I imagined it would require a lot more code in **VanillaJS** to reproduce a near-identical *dynamic `setInterval`*.
 
-But it turns out the same can be achieved, *also* in 10 lines:
+But it turns out the same can be achieved, *also* in 10 clearly readable lines:
 
 ## HTML
 
@@ -117,6 +117,10 @@ const updateCounterInterval = () => {
 
 counterIntervalInput.addEventListener('change', updateCounterInterval);
 ```
+
+The **VanillaJS** code above is (as far as I can tell - and I'm more than happy to be corrected) robust, reusable, and closer to the metal than **React**. It's readable, it's short - it's definitely not mind-numbingly complex. It is (I would argue) easy to reason about.
+
+So... what is the point of reactive frameworks like React? 
 ____
 
 ## See also:

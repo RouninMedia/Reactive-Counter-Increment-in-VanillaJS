@@ -1,9 +1,11 @@
 # Reactive CounterIncrement in VanillaJS
-*This is why I'm still struggling to get my head around reactive frameworks like React.js*
+*This is why I'm **still** struggling to get my head around reactive frameworks like React.js*
 
-In Oct 2020, just after I'd learned how to build native `WebComponents` I came across
+In Oct 2020, just after I'd learned how to build native `WebComponents` I came across a claim that, compared to components in frameworks like **React**, native `WebComponents` required:
 
-I built this [**Data Driven WebComponent**](https://github.com/RouninMedia/Data-Driven-WebComponent) to show that
+> way to much fiddling around to get working
+
+I was sceptical of this claim and I built this [**Data Driven WebComponent**](https://github.com/RouninMedia/Data-Driven-WebComponent) to show that that once learned, `WebComponents` were entirely straightforward to build and have them operate exactly as intended.
 
 ____
 
@@ -134,7 +136,4 @@ Significantly it can be written directly into the browser - it doesn't require a
 So... again, what is the *point* of reactive frameworks like React?
 
 If anyone has some enlightening words, I am all ears.
-____
-
-## See also:
 

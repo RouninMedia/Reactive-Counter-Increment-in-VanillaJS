@@ -109,7 +109,7 @@ ______
 ```js
 // GET DOCUMENT NODES
 const counterHeading = document.querySelector('.counterHeading');
-let counterIntervalInput = document.querySelector('.intervalInput');
+const counterIntervalInput = document.querySelector('.intervalInput');
 
 // DECLARE FUNCTIONS
 const getCounterInterval = () => {counterIntervalInput.value;}

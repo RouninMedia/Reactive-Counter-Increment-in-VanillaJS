@@ -129,7 +129,7 @@ const updateCounterInterval = () => {
 counterIntervalInput.addEventListener('change', updateCounterInterval);
 ```
 
-The **VanillaJS** code above is (as far as I can tell - and I'm more than happy to be corrected) robust, reusable, and closer to the metal than **React**. It's readable, it's short - it's definitely not mind-numbingly complex. It is (I would argue) easy to reason about.
+The **VanillaJS** code above is (as far as I can tell - and I'm more than happy to be corrected) robust, reusable, and more performant than **React**. It's readable, it's short - it's definitely not mind-numbingly complex. It is (I would argue) easy to reason about.
 
 Significantly it can be written directly into the browser - it doesn't require an external dependency or compilation or toolchains or taskrunners or any infrastructure (plus associated maintenance) at all.
 

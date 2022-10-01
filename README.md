@@ -101,20 +101,25 @@ ______
 ## JavaScript
 
 ```js
+// GET DOCUMENT NODES
 const counterHeading = document.querySelector('.counterHeading');
 let counterIntervalInput = document.querySelector('.intervalInput');
 
+// DECLARE FUNCTIONS
 const getCounterInterval = () => {counterIntervalInput.value;}
 const getCounterValue = () => {parseInt(counterHeading.textContent);}
 const incrementCounterValue = () => {counterHeading.textContent = (getCounterValue() + 1);}
 
+// DECLARE NAMED INTERVAL
 let incrementCounter = setInterval(() => {incrementCounterValue();}, getCounterInterval());
 
+// UPDATE NAMED INTERVAL FUNCTION
 const updateCounterInterval = () => {
   clearInterval(incrementCounter);
   incrementCounter = setInterval(() => {incrementCounterValue();}, getCounterInterval());
 }
 
+// EVENT LISTENER TO FIRE THE UPDATE FUNCTION
 counterIntervalInput.addEventListener('change', updateCounterInterval);
 ```
 

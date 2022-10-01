@@ -17,7 +17,9 @@ He responds:
 
 > This may not be obvious at first, but the difference between the setInterval you know and my useInterval Hook is that its arguments are “dynamic”.
 
-And then he demonstrates the *dynamic `setInterval`* with an example:
+And then he demonstrates the *dynamic `setInterval`* with two examples:
+
+### The longer example using React classes
 
 ```js
 import React from "react";
@@ -61,6 +63,27 @@ class Counter extends React.Component {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Counter />, rootElement);
 
+```
+
+### The shorter example using React hooks
+
+```js
+function Counter() {
+  let [count, setCount] = useState(0);
+  let [delay, setDelay] = useState(1000);
+
+  useInterval(() => {    // Your custom logic here    setCount(count + 1);  }, delay);
+  function handleDelayChange(e) {
+    setDelay(Number(e.target.value));
+  }
+
+  return (
+    <>
+      <h1>{count}</h1>
+      <input value={delay} onChange={handleDelayChange} />
+    </>
+  );
+}
 ```
 
 ______

@@ -22,9 +22,6 @@ And then he demonstrates the *dynamic `setInterval`* with two examples:
 ### The longer example using React classes
 
 ```js
-import React from "react";
-import ReactDOM from "react-dom";
-
 class Counter extends React.Component {
   state = {
     count: 0,
@@ -59,10 +56,6 @@ class Counter extends React.Component {
     );
   }
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<Counter />, rootElement);
-
 ```
 
 ### The shorter example using React hooks

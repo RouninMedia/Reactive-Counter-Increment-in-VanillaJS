@@ -19,13 +19,12 @@ let counterIntervalInput = document.querySelector('.intervalInput');
 const getCounterInterval = () => counterIntervalInput.value;
 const getCounterValue = () => parseInt(counterHeading.textContent);
 const incrementCounterValue = () => counterHeading.textContent = (getCounterValue() + 1);
+let incrementCounter = setInterval(() => incrementCounterValue(), getCounterInterval());
 
 const updateCounterInterval = () => {
   clearInterval(incrementCounter);
   incrementCounter = setInterval(() => incrementCounterValue(), getCounterInterval());
 }
-
-let incrementCounter = setInterval(() => incrementCounterValue(), getCounterInterval());
 
 counterIntervalInput.addEventListener('change', updateCounterInterval);
 ```

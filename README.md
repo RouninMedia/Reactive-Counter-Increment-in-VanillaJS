@@ -5,7 +5,7 @@ In ---, 2020, just after I'd learned how to build native `WebComponents` I came 
 
 Similarly, this morning, I've just come across this article:
 
-[Making `setInterval` Declarative with React Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/) by *Dan Abramov*
+ - [Making `setInterval` Declarative with React Hooks](https://overreacted.io/making-setinterval-declarative-with-react-hooks/) by *Dan Abramov*
 
 In the course of the blog post, Abramov writes a **React** hook `useInterval()` which looks very similar to **VanillaJS** `setInterval()`
 

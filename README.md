@@ -127,9 +127,9 @@ The **VanillaJS** code above is (as far as I can tell - and I'm more than happy 
 
 Significantly it can be written directly into the browser - it doesn't require an external dependency or compilation or toolchains or taskrunners or any infrastructure (plus associated maintenance) at all.
 
-______
+So... again, what is the *point* of reactive frameworks like React?
 
-So... again, what *is* the point of reactive frameworks like React? 
+If anyone has some enlightening words, I am all ears.
 ____
 
 ## See also:
